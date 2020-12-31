@@ -1,0 +1,6 @@
+Overall architecture of app. How all of the components and technologies are going to communicate
+- When a user navigates in the browser to our domain say Emaily.com,  we are gonna send them back a html document (index.html) and some JS filesa that contain a React application. These files will make some content appear on the screen. This is going to be the React side of our application
+The React side of our application does not know what to show to the user. It needs some data to show lie a list of srverys/ campains. We will use MongoDB to record and store al the different surveys and emails that we will send to people over time.
+Express API will have a bunch of business logic ns will be in between React and MOngoDB.
+It will take incoming request orm React app, pulll info form MongoDB  and send to back to React
+SO the user visits Emaily.com website in the browser -> We send them the React app -> React aspplication boots up -> asks the Express API for some data -> Express API pulls some infor from MongoDB -> sends it to the React app -> React app show that on the screen tto the user  
