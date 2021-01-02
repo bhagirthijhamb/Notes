@@ -106,7 +106,23 @@ onChange={e => this.setState({ term: e.target.value.toUpperCase() })}
 - Rather than defining a method on the class using an arrow function, we just pass an arrow function directly into the onChange prop
 
 # Hooks 
+In the world of React Hooks system is about giving the function components a lot of additional functionality. Chnaging that the function components coud not make use of State and lifecycle methods.
+
+react gives us functions like 
+    - useState - Function that lets us use state in a functional component. We get a similar function like setState.
+    - useEffect - Function that lets you use something like lifecycle methods in a functional component
+    - useRef - Function that lets us create a 'ref'/ reference to a particular element created by React, in functional component.
 - are a way to write reusable code, insead of more classic techniques like inheritance.
+
+# Custom Hook
+We use these hooks to make a custom hook
+
+A little chunk of code that does very repeatable task, we want to make as reusable as possible. To make a useTranslate hook, we can use useState and useEffect hooks inside of a custom hook
+
+# Comparision
+- Initialization - state = { activeIndex: 0} - useState(0)
+- Reference - this.state.activeIndex - activeIndex
+- Updates - this.setState({ activeIndex: 10 }) - setActiveIndex(10)
 
 # useState Hook
 - array destructuring
