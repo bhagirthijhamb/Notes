@@ -59,6 +59,8 @@ This response is send back to running node process and node will then respond to
 Common JS module
 ES2015 modules
 
+# Stripe key
+We are going to define the Stripe key as environment variable. By defining as environment variable it going to allow us to abstract out these keys tp a separate file where we can list them as constants and freely chnage b/w the sets of keys we have set for production and development.
 # Heroku Deployment Checklist
 - Dynamic Port Binding
   Heroku tells us which port our app will use, so we need to make sure we listen to the port they tell us to

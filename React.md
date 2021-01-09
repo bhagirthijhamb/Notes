@@ -153,22 +153,36 @@ A little chunk of code that does very repeatable task, we want to make as reusab
     - Func provided to useEffect called again
     - Return a cleanup function
 
+-----------------------------------------------------------------
+# NAVIGATION
+
 # Route Mapping
 - When at this url - show this component
-- localhost:3000/ -> Accordion
+- localhost:3000/ -> Accordion (window.location.pathname === '/')
 - localhost:3000/list -> Search
 - localhost:3000/dropdown -> Dropdown
+- localhost:3000/translate -> Translate
 
 # window.location 
-- is an object that is built into you browser tha tis updated everytime you navigate around to a diffrent url.
+- is an object that is built into your browser, that is updated everytime you navigate around to a diffrent url.
 >window.location - it has information extracted from the current url
 host: "localhost:3000"
 hostname: "localhost"
-href: "http://localhost:3000/ttranslate"
+href: "http://localhost:3000/translate"
 origin: "http://localhost:3000"
-pathname: "/translate"
+pathname: "/translate" // imp! everything after the domain name and the port
 port: "3000"
 protocol: "http:"
+
+# or
+- window.location.pathname === '/' -> Accordion
+- window.location.pathname === '/list' -> Search
+- window.location.pathname === '/dropdown' -> Dropdown
+- window.location.pathname === '/translate' -> Translate
+
+# Navigation with <a> element
+Traditional normal HTML based web application (not React) consisiting of variety of HTML documents.
+- 
 
 # Navigation
 - User clicks on 'List'
